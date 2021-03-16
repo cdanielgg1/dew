@@ -15,7 +15,19 @@
     <p>On this activity we will show the data in the variable employees as alerts</p>
 
     <script>
-     var employees = [{"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT"},{"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},{"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},{"id":4,"name":"IRENE POMBO JORDA","department":"HR"}]
+     var employees = [
+       
+     {"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT"},
+     
+     {"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},
+     
+     {"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},
+     
+     {"id":4,"name":"IRENE POMBO JORDA","department":"HR"}]
+
+     employees.forEach(employees => {
+       alert('El nombre del empleado es: ' + employees.name + '\ntrabaja en el departamento: ' + employees.department)
+     });
     </script>
   </body>
 </html>
