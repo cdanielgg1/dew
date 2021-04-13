@@ -13,9 +13,52 @@
   <body>
     <h1>Activity 1: DOM manipulation</h1>
     <p>On this activity we will show the data in the variable employees in this html as a table, build all the elements with js functions</p>
-    <div id="table-container"></div>
+    <div id="table-container">
+      <div class="row">
+        <div class="col-sm-4">
+               <table class="table">
+               <thead>
+                   <tr>
+                       <th>Nombre</th>
+                       <th>Departamento</th>
+                   </tr>
+                   <tbody id="employees-tabla">
+                  
+                   </tbody>
+               </thead>
+           </table>
+
+           <button id="mostrar-tabla">Mostrar Tabla</button>
+        </div>
+    </div>
+    </div>
     <script>
-     var employees = [{"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT"},{"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},{"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},{"id":4,"name":"IRENE POMBO JORDA","department":"HR"}]
+     var employees = [
+       {"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT"},
+     {"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT"},
+     {"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT"},
+     {"id":4,"name":"IRENE POMBO JORDA","department":"HR"}
+    ];
+  
+window.onload = cargarEventos;
+function cargarEventos(){
+    document.getElementById("mostrar-tabla").addEventListener("click", mostrarTabla, false);
+  
+}  
+function mostrarTabla(){
+  var cuerpoTabla = document.getElementById("employees-tabla");
+  var tablaLlena = "";
+  for (var i =0; i< employees.length; i++){
+      tablaLlena += "<tr>";
+      tablaLlena += "<td>"+employees[i].name+"</td>";
+      tablaLlena += "<td>"+employees[i].department+"</td>";
+      tablaLlena += "<tr>";
+  }
+  cuerpoTabla.innerHTML = tablaLlena;
+}
+
+
+
     </script>
   </body>
 </html>
