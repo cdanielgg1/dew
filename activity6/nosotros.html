@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#header").load("includes/header.html"); 
+    $("#nav").load("includes/nav.html"); 
+    
+    $("#aside").load("includes/aside.html"); 
+    $("#footer").load("includes/footer.html"); 
+  });
+  </script> 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+  <!-- Empieza Header -->
+
+  <div id="header"></div>
+ 
+<!-- Empieza Menu -->
+	
+<div id="nav"></div>
+ 
+<!-- Empieza Seccion de contenido -->
+	<section>
+     <article class="all-browsers">
+		<h1>Vestidos de lujo para tod@s</h1>
+   <article class="browser">
+  <h3>Quienes somos</h3>
+  
+      <p><img src="images/singer.jpg" alt="maquina de coser" width="160" height="161" class="izquierda">
+   Somos un grupo empresarial, instaurado en los años 80 y  formado por 60 personas, entre administracion, taller y distribucion. </p>
+
+     </article>
+        <article class="browser">
+<h3>Nuestras maquinas</h3>
+
+   
+    <p>Contamos con las mejores maquinas de coser del mercado, la calidad de Singer nos ofrece un acabado el cual el cliente de lujo valora y disfruta durante muchos años, nuestras prendas duran una vida. </p>
+    </article>
+     <article class="browser">
+  <h3>El personal</h3>
+    
+    <p><img src="images/mariposa.jpg" alt="vestido mariposa" width="132" height="151" class="derecha"> Nuestro personal esta especializado en todas las ramas del comercio, desde los artesanos de la tela, hasta nuestros vendedores de calidad.  El personal de tienda les atendera amablemente y resolvera cualquier duda.</p>
+    </article>
+    </article>
+
+	</section>
+<!-- Finaliza Seccion de contenido -->
+ 
+<!-- Empieza barra lateral -->
+<div id="aside"></div>
+
+ 
+<!-- Empieza pie de pagina -->
+<div id="footer"></div>
+ 
+</div>
+</body>
+</html>

@@ -1,16 +1,50 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#header").load("includes/header.html"); 
+    $("#nav").load("includes/nav.html"); 
+    $("#section").load("includes/section.html"); 
+    $("#aside").load("includes/aside.html"); 
+    $("#footer").load("includes/footer.html"); 
+  });
+  </script> 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+  <!-- Empieza Header -->
 
-    <title>Activity 6: Modularize</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <h1>Activity 6: Modularize</h1>
-    <p>Repeating code is not a good approach. Now we will take the static site we made in DOR and make that every common area stay in a different document so it can be loaded from the page.</p>
-    <p>Take menu, foot, etc. and place it in different files. in the pages add the necesary code lo load this areas in the html.</p>
-  </body>
+  <div id="header"></div>
+ 
+<!-- Empieza Menu -->
+	
+<div id="nav"></div>
+
+ 
+<!-- Empieza Seccion de contenido -->
+	
+<div id ="section"></div>
+ 
+<!-- Empieza barra lateral -->
+	<div id="aside"></div>
+
+ 
+<!-- Empieza pie de pagina -->
+<div id="footer"></div>
+
+ 
+</div>
+</body>
 </html>

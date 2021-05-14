@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <LINK REL="stylesheet" TYPE="text/css" HREF="estilos.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script> 
+  $(function(){
+    $("#header").load("includes/header.html"); 
+    $("#nav").load("includes/nav.html"); 
+ 
+    $("#aside").load("includes/aside.html"); 
+    $("#footer").load("includes/footer.html"); 
+  });
+  </script> 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+  <!-- Empieza Header -->
+  <div id="header"></div>
+
+ 
+<!-- Empieza Menu -->
+<div id="nav"></div>
+
+ 
+<!-- Empieza Seccion de contenido -->
+	<section>
+      <article class="all-browsers">
+		<h1>Vestidos de lujo para tod@s</h1>
+  <article class="browser">
+  <h2>Nuestras virtudes</h2>
+   
+      <img src="images/flores.jpg" alt="trajeFlor" width="172" height="127" class="izquierda">
+      
+  <p>Disponemos de articulos de gran calidad, usamos los mejores materiales y disponemos de los mejores profesionales. Precios para todos los bolsillos. </p>
+   <p>Nuestras telas vienen directamente de la India, Pakistan Y Senegal. Contribuimos con la población local a mejorar su situación económica, ofreciendoles un buen trabajo con un salario digno. </p>
+  
+    </article>
+    <article class="browser">
+  <h2>Nuestros vestidos</h2>
+    
+    
+   <p>Este es un album de imágenes de ejemplo en el que todas las imágenes
+      tienen el mismo tamaño, y por lo tanto se le puede aplicar el mismo 
+      código CSS a todas ellas.</p>
+      
+      
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/flores.jpg">
+    <img src="images/mariposa.jpg" alt="Forest" width="600" height="400">
+     
+    </a>
+    <div class="desc">Vestido mariposa</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/mariposa.jpg">
+       <img src="images/flores.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">Vestido floreado</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/vestido.jpg">
+      <img src="images/vestido.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Vestido gala</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/vestidoAzul_.jpg">
+      <img src="images/vestidoAzul_.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Vestido rosas</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+    
+    </article>
+     <article class="browser">
+  <h2>El personal</h2>
+  
+     
+     <p> <img src="images/vestido.jpg" alt="TrajeNegro" width="144" height="166" class="derecha"> Nuestro personal esta especializado en todas las ramas del comercio, desde los artesanos de la tela, hasta nuestros vendedores de calidad.  El personal de tienda les atendera amablemente y resolvera cualquier duda.</p>
+    </article>
+      </article>
+ 
+	</section>
+
+ 
+<!-- Empieza barra lateral -->
+<div id="aside"></div>
+
+ 
+<!-- Empieza pie de pagina -->
+<div id="footer"></div>
+
+ 
+</div>
+</body>
+</html>

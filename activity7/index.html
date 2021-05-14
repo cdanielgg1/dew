@@ -18,6 +18,7 @@
         border-radius: 5px;
       }
     </style>
+    <script src="reproductor.js"></script>
   </head>
   <body>
     <h1>Activity 7: the audio tag + events</h1>
@@ -34,13 +35,15 @@
       <li>music3.mp3</li>
     </ol>
     <audio>
-     <source src="" type="audio/mpeg">
+     <source src="/musica/Alexander_Nakarada_-_The_Return.mp3" type="audio/mpeg">
+     <source src="/musica/Alexander_Nakarada_-_The_Return.mp3" type="audio/mpeg">
      Your browser does not support the audio tag.
     </audio>
+   
     <div class="controls">
-      <div class="play"><i class="fa fa-play"></i></div>
-      <div class="backward"><i class="fa fa-step-backward"></i></div>
-      <div class="fordward"><i class="fa fa-step-forward"></i></div>
+      <div class="play"><i class="fa fa-play" onClick="reproducir()"></i></div>
+      <div class="backward"><i class="fa fa-step-backward" onClick="retroceder()"></i></div>
+      <div class="fordward"><i class="fa fa-step-forward" onClick="avanzar()"></i></div>
     </div>
   </body>
 </html>

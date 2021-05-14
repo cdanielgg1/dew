@@ -1,19 +1,87 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  -->
+  
+   
+    <!-- CSS FOR STYLING THE PAGE -->
+    <style>
+      table {
+          margin: 0 auto;
+          font-size: large;
+          border: 1px solid black;
+      }
+
+      h1 {
+          text-align: center;
+          color: #006600;
+          font-size: xx-large;
+          font-family: 'Gill Sans', 
+              'Gill Sans MT', ' Calibri', 
+              'Trebuchet MS', 'sans-serif';
+      }
+
+      td {
+          background-color: #E4F5D4;
+          border: 1px solid black;
+      }
+
+      th,
+      td {
+          font-weight: bold;
+          border: 1px solid black;
+          padding: 10px;
+          text-align: center;
+      }
+
+      td {
+          font-weight: lighter;
+      }
+  </style>
+
+
 
     <title>Activity 2: jQuery + AJAX request + DOM manipulation</title>
   </head>
   <body>
     <h1>Activity 2: jQuery + AJAX request + DOM manipulation</h1>
     <p>With JQuery load de data on the sibling file employees.json and build a table showing the data:</p>
-    <div id="table-container"></div>
-    <sript src="https://code.jquery.com/jquery-3.6.0.min.js" />
+  
+
+      <div class="container"> 
+        <div class="section"> 
+          <button class ="btn" id="boton">Listar</button>
+            <table> 
+            <thead> 
+              <tr>
+               
+              <th>Nombre</th> 
+              <th>Departamento</th> 
+             </tr>
+             </thead> 
+             <tbody id="res"> 
+        
+             </tbody> 
+            </table> 
+        
+        </div> 
+        </div> 
+     <script src="activity2.js"></script>
+
+
   </body>
+
+
 </html>

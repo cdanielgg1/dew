@@ -22,6 +22,14 @@
       .hightlight{
         background-color: yellow;
       }
+      .ball{
+        background-color: red;
+        border-radius: 50%;
+        position:absolute;
+
+
+
+      }
     </style>
   </head>
   <body>
@@ -72,7 +80,17 @@
           })
 
       }
-      </script>
+ballX = 0;
+ballY = 0;
+velX = -0.5;
+velY = 0.5;
+
+setInterval(function(){
+  //debugger;
+  let ball = document.getElementByClassname('ball')[0];
+    ball.style.top = ballY++ + 'px';
+    ball.style.left = ballX++ + 'px';
+  } , 50)   </script>
 
   </body>
 </html>

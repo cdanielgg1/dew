@@ -10,6 +10,37 @@
   <body>
     <h1>Activity 3: Change the image</h1>
     <p>Change the following image with changed.png only if changed.png exists in the server (you need to add the images)</p>
-    <img src="./default.png" alt="just an image">
+
+
+    <img src="img/default.png" onerror="javascript:this.src='/img/changed.png'"/>
+  
+    
+ 
+    <script>
+  fetch('/img/default.png', { method: 'HEAD' })
+    .then(res => {
+        if (res.ok) {
+            console.log('Image exists.');
+        } else {
+            console.log('Image does not exist.');
+        }
+    }).catch(err => console.log('Error:', err));
+
+    </script>
+    <script>
+
+       function imageExists(image_url){
+
+  var http = new XMLHttpRequest();
+  http.open('HEAD', image_url, false);
+  http.send();
+  return http.status != 404;
+
+}
+
+
+</script>
+
+
   </body>
 </html>

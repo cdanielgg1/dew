@@ -6,7 +6,7 @@ generate.onclick = (event) =>{
     event.preventDefault(); //prevent normal flow
     //event.stopPropagation(); //prevent event bubbling
     //empty container
-    container.querySelectorAll(".row").forEach(container.removeChild);//this is the same as:
+    container.querySelectorAll(".rows").forEach(container.removeChild);//this is the same as:
     //container.querySelectorAll(".row").forEach(ros) => container.removeChild(row));
 
     //or eaiser:
