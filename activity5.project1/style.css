@@ -1,0 +1,35 @@
+
+.calculadora { border: 3px blue ridge; width: 250px;text-align: center;
+               background-color: #f6f8d8; }
+
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+#textoPantalla { width: 185px; border: 2px black solid; text-align: right; 
+                 position: relative; left: 23px;  padding: 0px 5px;
+                 background-color: white; font-family: "courier new"; 
+                 overflow: hidden;}
+
+                 #log {
+                     
+                     text-align: right; 
+                    position: relative; left: 23px;  padding: 0px 5px;
+                     font-size:10px;
+                     font-family: "courier new"; 
+                    overflow: hidden;}
+   
+
+                    label {
+                        display: block;
+                        font: 1rem 'Fira Sans', sans-serif;
+                    }
+                    
+                    input,
+                    label {
+                        margin: .4rem 0;
+                    }
+                    
+
+/*botones normales: anchura y margen*/
+.calculadora [type=button] { width: 35px; padding: 0;  }
+/*botones especiales*/
+.calculadora input.numero { color: red; width: 60px; }
+.calculadora input.resultado { color: rgb(48, 16, 107); width: 60px; }

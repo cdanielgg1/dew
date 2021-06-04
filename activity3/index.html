@@ -4,8 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script type="text/javascript" src="activity3.js"></script>
-
+ 
+<script type="text/javascript" src="activity3.js"></script>
     <title>Activity 3: Forms &amp; click event</title>
   </head>
   <body>
@@ -17,10 +17,13 @@
         <li>Each table cell must contain a text like: "Row: X, Col: Y"</li>
       </ol>
          <form>
-           <label>Rows<input name="rows" type="number" placeholder="rows"></label>
-           <button id="generate">Generate Table</button>
+           <label>Rows</label><input id="rows" name="rows" type="number" min="1" max="10" placeholder="rows">
+           <label>Columns</label><input id="columns" name="columns" type="number" min="1" max="10" placeholder="columns">
+           <input type="button" onclick="createTable()" value="createTable" />
           </form>   
-          <div id="table-container"></div>                                                         
+        
+          <table id="myTable" border="3" ></table>
+       
 
   </body>
 </html>

@@ -1,21 +1,19 @@
-const generate = document.getElementById('generate');
-const rows = document.getElementByName('rows')[0];
-const container = document.getElementById('table-container');
 
-generate.onclick = (event) =>{
-    event.preventDefault(); //prevent normal flow
-    //event.stopPropagation(); //prevent event bubbling
-    //empty container
-    container.querySelectorAll(".rows").forEach(container.removeChild);//this is the same as:
-    //container.querySelectorAll(".row").forEach(ros) => container.removeChild(row));
+function createTable()
+{
 
-    //or eaiser:
-    //container.innerHTML="";
+document.getElementById("myTable").innerHTML = "";
 
-    //generate elements
-    for(let i = 0 ; i < rows.value ; i++){
-        const div = document.createElement("div");
-        div.innerText = "Row: " + (i+1) + ". Col: 1";
-        container.appendChild(div);
+var rows = document.getElementById('rows').value; 
+var colums = document.getElementById('columns').value;
+  
+ for(var r=0;r<parseInt(rows,10);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(colums,10);c++)  
+    {
+      var y = x.insertCell(c);
+       y.innerHTML="Row: "+r+" Col: "+c;
+      }
     }
-}
+    }
